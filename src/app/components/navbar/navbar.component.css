@@ -1,0 +1,43 @@
+.container {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.container__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo__img {
+    width: 150px;
+}
+
+.logo__title {
+    font-size: 27px;
+    font-weight: 600;
+    color: #ffffffc7;
+}
+
+.container__menu {
+    margin-right: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.menu__element {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #233d4d8e;
+}
+
+.menu__element:hover {
+    background-color: #A1C181;
+    cursor: pointer;
+}
