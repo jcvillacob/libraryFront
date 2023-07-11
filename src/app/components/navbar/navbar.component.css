@@ -24,6 +24,10 @@
     color: #ffffffc7;
 }
 
+.-after {
+    color: #233d4d;
+}
+
 .container__menu {
     margin-right: 25px;
     display: flex;
@@ -40,4 +44,12 @@
 .menu__element:hover {
     background-color: #A1C181;
     cursor: pointer;
+}
+
+.-login {
+    background-color: #FE7F2D;
+}
+
+.-login:hover {
+    background-color: #619B8A;
 }

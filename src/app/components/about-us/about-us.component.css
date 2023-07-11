@@ -1,0 +1,125 @@
+.container {
+    width: 98.8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+    gap: 70px;
+    padding: 15px;
+}
+
+.team__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text__title {
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    color: #233d4d;
+}
+
+.text__paragraph {
+    font-size: 20px;
+}
+
+.team__img {
+    width: 40%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img__photo {
+    width: 100%;
+}
+
+.container__mission {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+
+/* Location */
+.container__location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    padding: 50px 0;
+    background: #ffe359b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffa85134, #ffe35942);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffa85131, #ffe35938);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.location__title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #233d4d;
+    position: relative;
+}
+
+.-subr::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #233d4d;
+    position: absolute;
+    bottom: -15px;
+    left: 15%;
+
+}
+
+.location__maps {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.maps__data {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.maps__img {
+    width: 40%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #233d4d6b;
+}
+
+.img__iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}

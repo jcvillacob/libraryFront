@@ -1,11 +1,11 @@
 <nav class="container">
     <a routerLink="/" class="container__logo">
         <img src="../../../assets/Logo.png" alt="" class="logo__img">
-        <h2 class="logo__title">Lidenbrok</h2>
+        <h2 class="logo__title" [ngClass]="{'-after': titleB}">Lidenbrok</h2>
     </a>
 
     <div class="container__menu">
-        <div class="menu__element" *ngFor="let element of menuElements" [routerLink]="element.routerLink">
+        <div class="menu__element" *ngFor="let element of menuElements" [routerLink]="element.routerLink" [ngClass]="element.class">
             {{ element.name }}
         </div>
 

@@ -1,1 +1,52 @@
-<p>some-books works!</p>
+<div class="container">
+
+    <!-- Books Section -->
+    <section class="container__book-section">
+        <h2 class="book-section__title">Algunos de Nuestros Libros</h2>
+        <div class="book-section__books">
+            <div class="books__book" *ngFor="let book of filteredBooks">
+                <div class="book__card">
+                    <a href="">
+                        <a [routerLink]="['/book', book._id]">
+                            <img class="card__img" [src]="book.coverImage" alt="Book cover"/>
+                        </a>
+                        <div class="card__body">
+                            <h5 class="body__title">{{ book.title }}</h5>
+                            <p class="body__text">{{ book.author }}</p>
+                            <div class="body__boton-available">
+                                <a href="#" class="boton-available__more">Ver</a>
+                                <div class="boton-available__disponibility">
+                                    <p>Disponibilidad</p>
+                                    <i class="fa-solid fa-circle"
+                                        [ngClass]="{'-green': book.available, '-red': !book.available}"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Authors Section
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Autores Destacados</h2>
+            <div class="row">
+                <div class="col-md-4" *ngFor="let author of featuredAuthors">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ author }}</h5>
+                            <p class="card-text">
+                                Descubre libros de este autor en nuestra librería.
+                            </p>
+                            <div class="boton-available">
+                                <a href="#" class="btn btn-primary">Ver Libros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+</div>

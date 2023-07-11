@@ -13,8 +13,8 @@
         </h2>
 
         <!-- Elements -->
-        <div class="cards__elements">
-            <div class="elements__element">
+        <div class="cards__elements" [ngClass]="{'-view': cards}">
+            <div #cardElement class="elements__element">
                 <div class="element__img">
                     <img src="../../../assets/home/books.png" alt="" class="img__img">
                 </div>
