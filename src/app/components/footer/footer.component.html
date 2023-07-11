@@ -1,0 +1,25 @@
+<footer class="container">
+
+    <!-- Networks -->
+    <div class="container__networks">
+        <div class="networks__bar"></div>
+        <div class="networks__network" *ngFor="let red of redes" [ngClass]="red.class"></div>
+        <div class="networks__bar"></div>
+    </div>
+
+    <div class="container__logo">
+        <img src="../../../assets/Logo.png" alt="" class="logo__img">
+    </div>
+
+    <div class="container__title">
+        <h1 class="title__text">Lidenbrok</h1>
+    </div>
+
+    <div class="container__legal">
+        <a routerLink="" class="legal__link">Información Legal</a>
+        <a routerLink="" class="legal__link">Política de Privacidad</a>
+        <a routerLink="" class="legal__link">Sobre Nosotros</a>
+    </div>
+
+
+</footer>

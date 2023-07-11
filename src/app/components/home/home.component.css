@@ -1,7 +1,3 @@
-.container {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .container__hero {
     background-image: url('../../../assets/home/homeLibrary.png');
     background-size: cover;

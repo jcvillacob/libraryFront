@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #233d4d;
+}
+
+.container__networks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 0 0 0;
+}
+
+.networks__bar {
+    max-width: 40%;
+    min-width: 35%;
+    height: 4px;
+    background-color: #ffffff9d;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.networks__network {
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.networks__network:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.container__logo {
+    width: 15%;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+.title__text {
+    color: #fff;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.container__legal {
+    display: flex;
+    gap: 20px;
+}
+
+.legal__link {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #ffffffae;
+}
+
+.legal__link:hover {
+    color: #fff;
+}
+
