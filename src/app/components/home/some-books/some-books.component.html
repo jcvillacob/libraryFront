@@ -6,12 +6,14 @@
         <div class="book-section__books">
             <div class="books__book" *ngFor="let book of filteredBooks">
                 <div class="book__card">
-                    <a href="">
+                    <a routerLink="">
                         <a [routerLink]="['/book', book._id]">
-                            <img class="card__img" [src]="book.coverImage" alt="Book cover"/>
+                            <img class="card__img" [src]="book.coverImage" alt="Book cover" />
                         </a>
                         <div class="card__body">
-                            <h5 class="body__title">{{ book.title }}</h5>
+                            <h5 class="body__title"
+                                style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
+                                {{ book.title }}</h5>
                             <p class="body__text">{{ book.author }}</p>
                             <div class="body__boton-available">
                                 <a href="#" class="boton-available__more">Ver</a>

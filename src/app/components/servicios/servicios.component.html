@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="container__news">
+        <div class="news__menu">
+            <div class="menu__items">
+                <div class="items__item" *ngFor="let item of items; index as i" [ngClass]="{'selected': i == selected}" (click)="selectI(i)">
+                    {{ item.category }}
+                </div>
+            </div>
+        </div>
+        <div class="news__img" [ngClass]="{'init': newImg}">
+            <img [src]="itemSelected.img" alt="" class="img__photo">
+        </div>
+    </div>
+</div>

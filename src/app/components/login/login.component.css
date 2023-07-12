@@ -122,3 +122,25 @@
     cursor: pointer;
     color: #FE7F2D;
 }
+
+.form__logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__img {
+    width: 50%;
+    margin-bottom: -60px;
+    margin-top: -60px;
+}
+
+.logo__text {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 40px;
+
+}
