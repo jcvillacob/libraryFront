@@ -10,10 +10,10 @@ export class ServiciosComponent implements AfterViewInit {
   selected: number = 0;
   itemSelected: any = {};
   items: any[] = [
-    {category: 'Item1', title: '', description: '', img: '../../../assets/servicios/voley.png'},
-    {category: 'Item1', title: '', description: '', img: '../../../assets/servicios/globos.png'},
-    {category: 'Item1', title: '', description: '', img: '../../../assets/servicios/triangulo.png'},
-    {category: 'Item1', title: '', description: '', img: '../../../assets/servicios/murder.png'},
+    {category: 'Nuevos Libros', title: '', description: '', img: '../../../assets/servicios/libros.png'},
+    {category: 'Deportes', title: '', description: '', img: '../../../assets/servicios/sports.png'},
+    {category: 'Talleres', title: '', description: '', img: '../../../assets/servicios/club.png'},
+    {category: 'Eventos Especiales', title: '', description: '', img: '../../../assets/servicios/murder.png'},
   ];  
   
   ngAfterViewInit(): void {

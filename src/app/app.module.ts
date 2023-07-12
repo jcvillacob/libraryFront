@@ -11,6 +11,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ActivitiesComponent } from './components/servicios/activities/activities.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
     FooterComponent,
     AboutUsComponent,
     LoginComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,
