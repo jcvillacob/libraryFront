@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="container__forms">
+        <!-- Login -->
+        <div class="forms__cont-form -login" [ngClass]="{'-login-active': !register}">
+            <!-- Form Container -->
+            <div class="cont-form__container" *ngIf="!register">
+                <h1 class="cont-form__title">Sing In</h1>
+                <i class="fa-solid fa-arrow-right-long cont-form__arrow" (click)="changeRegister()"></i>
+                <form (submit)="onSubmit()" class="cont-form__form">
+                    <div class="form__element">
+                        <label for="" class="element__label">Username</label>
+                        <input type="text" class="element__input">
+                    </div>
+                    <div class="form__element">
+                        <label for="" class="element__label">Password</label>
+                        <input type="password" class="element__input">
+                    </div>
+                    <input type="submit" name="sign-in" [value]="'Inicia Sesión'" class="form__submit"/>
+                </form>
+            </div>
+        </div>
+
+        <!-- Register -->
+        <div class="forms__cont-form -register" [ngClass]="{'-register-active': register}">
+            <div class="cont-form__container" *ngIf="register">
+                <h1 class="cont-form__title">Sing Up</h1>
+                <i class="fa-solid fa-arrow-left-long cont-form__arrow" (click)="changeRegister()"></i>
+                <form (submit)="onSubmit()" class="cont-form__form">
+                    <div class="form__element">
+                        <label for="" class="element__label">Username</label>
+                        <input type="text" class="element__input">
+                    </div>
+                    <div class="form__element">
+                        <label for="" class="element__label">Password</label>
+                        <input type="password" class="element__input">
+                    </div>
+                    <input type="submit" name="sign-in" [value]="'Inicia Sesión'" class="form__submit"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

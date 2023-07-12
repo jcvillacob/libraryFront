@@ -11,9 +11,9 @@ export class NavbarComponent implements OnInit {
   menuElements: any[] = [
     { name: 'Home', routerLink: 'home', class: ''},
     { name: 'Books', routerLink: '', class: ''},
-    { name: 'Services', routerLink: '', class: ''},
+    { name: 'Services', routerLink: 'services', class: ''},
     { name: 'About Us', routerLink: 'about-us', class: ''},
-    { name: 'Login', routerLink: '', class: '-login'},
+    { name: 'Login', routerLink: 'login', class: '-login'},
   ]
   titleB: boolean = false;
   currentRoute: string = '';
@@ -25,7 +25,9 @@ export class NavbarComponent implements OnInit {
       filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       this.currentRoute = event.urlAfterRedirects;
-      if(this.currentRoute == '/home') {
+      if (this.currentRoute == '/login') {
+        this.titleB = false;
+      } else if(this.currentRoute == '/home') {
         this.titleB = false;
       } else {
         this.titleB = true;
@@ -36,7 +38,9 @@ export class NavbarComponent implements OnInit {
       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
       const windowHeight = window.innerHeight - 100;
 
-      if(this.currentRoute == '/home') {
+      if(this.currentRoute == '/login') {
+        this.titleB = false;
+      }else if(this.currentRoute == '/home') {
         if (scrollPosition >= windowHeight ) {
           this.titleB = true;
         } else {

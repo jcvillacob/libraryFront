@@ -1,0 +1,124 @@
+.container {
+    background-image: url('../../../assets/login/login-background.png');
+    width: 98.8vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__forms {
+    margin-top: 80px;
+    width: 80%;
+    height: 75%;
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+
+.forms__cont-form {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.-login-active,
+.-register-active {
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cont-form__container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.cont-form__title {
+    font-size: 26px;
+}
+
+.cont-form__title::after  {
+    content: '';
+    background-color: #233D4D;
+    width: 80%;
+    height: 4px;
+    position: relative;
+    display: block;
+    margin: 15px auto;
+    border-radius: 7px;
+}
+
+.cont-form__form {
+    width: 80%;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+}
+
+.form__element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.element__label {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.element__input {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.274);
+}
+
+.form__submit {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 17px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.274);
+    background-color: #233D4D;
+    color: #fff;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+    background-color: #FE7F2D;
+}
+
+.cont-form__arrow {
+    font-size: 55px;
+    color: #233D4D;
+}
+
+.cont-form__arrow:hover {
+    cursor: pointer;
+    color: #FE7F2D;
+}
