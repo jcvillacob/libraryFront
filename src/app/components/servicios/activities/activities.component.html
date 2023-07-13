@@ -1,1 +1,16 @@
-<p>activities works!</p>
+<div class="container">
+    <h1 class="container__title">Actividades y Eventos</h1>
+    <div class="container__cards">
+        <div class="cards__arrow-cont -left-arrow" (click)="corousel('left')">
+            <i class="fa-solid fa-arrow-left arrow-cont__arrow"></i>
+        </div>
+        <div class="cards__arrow-cont -right-arrow" (click)="corousel('right')">
+            <i class="fa-solid fa-arrow-right arrow-cont__arrow"></i>
+        </div>
+        <div class="cards__card" *ngFor="let activity of activities; index as i"
+            [ngStyle]="{'transform': 'translateX(' + distance + 'px)'}">
+            <h2 class="card__title">{{ activity.activity }}</h2>
+            <div class="card__body"></div>
+        </div>
+    </div>
+</div>

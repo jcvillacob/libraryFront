@@ -13,7 +13,7 @@ export class ServiciosComponent implements AfterViewInit {
     {category: 'Nuevos Libros', title: '', description: '', img: '../../../assets/servicios/libros.png'},
     {category: 'Deportes', title: '', description: '', img: '../../../assets/servicios/sports.png'},
     {category: 'Talleres', title: '', description: '', img: '../../../assets/servicios/club.png'},
-    {category: 'Eventos Especiales', title: '', description: '', img: '../../../assets/servicios/murder.png'},
+    {category: 'Eventos Especiales', title: '', description: '', img: '../../../assets/servicios/events.png'},
   ];  
   
   ngAfterViewInit(): void {
