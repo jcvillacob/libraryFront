@@ -4,8 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .container__title {
@@ -32,11 +30,12 @@
     justify-content: flex-start;
     gap: 150px;
     overflow: hidden;
-    background-color: lightblue;
     padding: 50px 50px 50px 230px;
     position: relative;
 }
 
+
+/* Arrows */
 .cards__arrow-cont {
     position: absolute;
     background-color: #233D4D;
@@ -61,15 +60,61 @@
     right: 40px;
 }
 
+
+/* Cards */
 .cards__card {
-    padding: 15px;
+    padding: 0;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+    position: relative;
+}
+
+.card__image {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image__img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__title {
+    font-size: 17px;
+    position: absolute;
+    margin: 0 10px 10px 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff71;
+    color: #233D4D;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .card__body {
-    width: 250px;
-    height: 250px;
+    background-color: #ffffff4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    top: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
 }
 
+.cards__card:hover .card__body {
+    top: 0;
+}
+
+.body__text {
+    font-size: 16px;
+    color: rgb(32, 31, 31);
+    font-weight: 600;
+}

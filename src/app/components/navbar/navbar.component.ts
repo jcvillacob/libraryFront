@@ -10,7 +10,7 @@ import { filter } from 'rxjs/operators';
 export class NavbarComponent implements OnInit {
   menuElements: any[] = [
     { name: 'Home', routerLink: 'home', class: ''},
-    { name: 'Books', routerLink: '', class: ''},
+    { name: 'Books', routerLink: 'books', class: ''},
     { name: 'Services', routerLink: 'services', class: ''},
     { name: 'About Us', routerLink: 'about-us', class: ''},
     { name: 'Login', routerLink: 'login', class: '-login'},

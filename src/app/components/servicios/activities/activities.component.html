@@ -1,16 +1,27 @@
 <div class="container">
     <h1 class="container__title">Actividades y Eventos</h1>
     <div class="container__cards">
+
+        <!-- Arrows -->
         <div class="cards__arrow-cont -left-arrow" (click)="corousel('left')">
             <i class="fa-solid fa-arrow-left arrow-cont__arrow"></i>
         </div>
         <div class="cards__arrow-cont -right-arrow" (click)="corousel('right')">
             <i class="fa-solid fa-arrow-right arrow-cont__arrow"></i>
         </div>
+
+        <!-- Cards -->
         <div class="cards__card" *ngFor="let activity of activities; index as i"
-            [ngStyle]="{'transform': 'translateX(' + distance + 'px)'}">
+            [ngStyle]="{'transform': 'translateX(' + distance + 'px)', 'transition': 'all 0.5s ease-out'}" cdkDrag cdkDragLockAxis="x"
+            (cdkDragStarted)="dragStart($event)" (cdkDragEnded)="dragEnd($event)">
+            <div class="card__image">
+                <img [src]="activity.image" alt="" class="image__img">
+            </div>
             <h2 class="card__title">{{ activity.activity }}</h2>
-            <div class="card__body"></div>
+            <div class="card__body">
+                <div class="body__text">{{ activity.description }}</div>
+            </div>
         </div>
+
     </div>
 </div>
